@@ -1,0 +1,52 @@
+@import '../../styles/var';
+
+.payment {
+
+    &__container {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+
+        padding: 98px 103px 66px;
+
+        align-items: center;
+
+        img {
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .splide__arrow {
+            position: absolute;
+            top: 10px;
+            cursor: pointer;
+            background-color: transparent;
+
+            &--prev {
+                left: 0;
+            }
+
+            &--next {
+                right: 0;
+            }
+        }
+
+        .splide {
+            width: 100%;
+
+            li {
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 767.98px) {
+    .payment__container {
+        padding: 48px 16px 34px;
+        gap: 40px;
+    }
+}

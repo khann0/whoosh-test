@@ -1,0 +1,38 @@
+// functions
+
+@function px-to-rem($px) {
+    @return calc($px/16)+rem;
+}
+
+//varibles
+//-colors
+
+$backgroundColor: #f1f4fc;
+$backgroundAccent: #c2d2f4;
+$mainColor: #1d253c;
+$textColor: #666;
+
+$yellow: #ffdd2d;
+$blue: #2b6bf3;
+$pink: #fd466e;
+
+//-font sizes
+
+$fs-l1: px-to-rem(40);
+$fs-l2: px-to-rem(32);
+
+$fs-m1: px-to-rem(24);
+$fs-m2: px-to-rem(22);
+$fs-m4: px-to-rem(20);
+$fs-m3: px-to-rem(18);
+
+$fs-s1: px-to-rem(16);
+$fs-s2: px-to-rem(14);
+$fs-s3: px-to-rem(12);
+
+//-font weights
+
+$fw-light: 200;
+$fw-book: 300;
+$fw-regular: 400;
+$fw-bold: 700;

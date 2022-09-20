@@ -1,0 +1,145 @@
+@import '../../styles/var';
+
+.intro {
+    position: relative;
+    border-radius: 200px 0 0 200px;
+    background: linear-gradient(294.74deg, #F8FAFF 34.3%, #F2F6FF 99.57%);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 65px 0;
+    }
+
+    &__text {
+        max-width: 754px;
+
+        opacity: 0.48;
+
+        text-align: center;
+
+        font-size: $fs-m2;
+        line-height: $fs-l2;
+        font-weight: $fw-book;
+        letter-spacing: 0.18px;
+    }
+
+    &__items {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 9px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 300px;
+
+        p {
+            margin-top: -3px;
+        }
+
+        span {
+            color: $blue;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+        box-shadow: 0px 8px 16px rgba(43, 107, 243, 0.16);
+
+        background-color: #fff;
+    }
+
+    &__button {
+        width: 296px;
+        height: 48px;
+
+        padding: 8px 70px;
+        margin-top: 10px;
+
+        border-radius: 32px;
+        cursor: pointer;
+
+        background-color: $yellow;
+        color: $mainColor;
+
+        font-family: 'Intro', sans-serif;
+        font-size: $fs-m3;
+        line-height: $fs-l2;
+
+        transition: 0.5s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        right: 0;
+        top: -66px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .intro {
+        border-radius: 0;
+    }
+
+    .intro__container {
+        padding: 48px 0px 49px;
+    }
+
+    .intro__text {
+        width: 85%;
+        margin-top: -20px;
+        font-size: $fs-m4;
+    }
+
+    .intro__decor {
+        display: none;
+    }
+
+    .intro__items {
+        gap: 41px;
+    }
+
+    .intro__item {
+        text-align: center;
+
+        .intro__icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        .card__text {
+            margin-top: -11px;
+        }
+    }
+}

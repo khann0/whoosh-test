@@ -1,0 +1,19 @@
+$fontPath: '../assests/fonts/';
+$fontName: 'Intro';
+
+@mixin font-face($fileName, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $fontName;
+        src: url('#{$fontPath}#{$fileName}.woff') format('woff'),
+        url('#{$fontPath}#{$fileName}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
+@include font-face('Intro-Regular', normal, normal);
+@include font-face('Intro-Light', 200, normal);
+@include font-face('Intro-Book', 300, normal);
+@include font-face('Intro-Book-Italic', 300, italic);
+@include font-face('Intro-Bold', 700, normal);

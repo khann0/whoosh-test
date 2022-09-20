@@ -1,0 +1,115 @@
+@import '../../styles/var';
+
+.info {
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 30px;
+        padding: 91px 87px 73px 91px;
+    }
+
+    &__text {
+        max-width: 754px;
+
+        opacity: 0.48;
+        text-align: center;
+
+        font-size: $fs-m2;
+        line-height: $fs-l2;
+        font-weight: $fw-book;
+        letter-spacing: 0.18px;
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 50px;
+        padding: 9px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        width: 300px;
+        height: 280px;
+        padding: 17px 24px 23px;
+
+        border: 1px solid #b7c6f7;
+        border-radius: 8px;
+        transition: 0.05s;
+
+        background-color: #f8faff;
+
+        .card__text {
+            margin-top: 9px;
+        }
+
+        &:hover {
+            border: 2px solid $blue;
+            background-color: #fff;
+        }
+    }
+
+    &__icon {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 80px;
+        height: 80px;
+        margin-left: 8px;
+
+        border-radius: 50%;
+        box-shadow: 0px 8px 16px rgba(43, 107, 243, 0.16);
+
+        background-color: #fff;
+
+        &_decorated {
+            &::after {
+                content: '';
+                background-image: url('../../assests/img/Route.svg');
+                position: absolute;
+                width: 102px;
+                height: 76px;
+                left: 89px;
+                top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .info__container {
+        padding: 55px 16px 42px;
+        gap: 11px;
+
+        .section__title {
+            text-align: center;
+            width: 75%;
+        }
+    }
+
+    .info__text {
+        font-size: $fs-m4;
+    }
+
+    .info__row {
+        gap: 32px;
+    }
+
+    .info__item {
+        padding: 21px 23px;
+        gap: 27px;
+
+        .card__title {
+            line-height: $fs-m1;
+        }
+    }
+}

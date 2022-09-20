@@ -1,0 +1,96 @@
+@import '../../styles/var';
+
+.select {
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: 153px;
+    font-size: $fs-s1;
+    line-height: $fs-m1;
+    font-weight: $fw-book;
+
+    &__display {
+        padding: 0 23px;
+
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+
+        background-color: transparent;
+        color: #666;
+
+        font-family: 'Intro', sans-serif;
+        font-size: $fs-s1;
+        line-height: $fs-l2;
+        font-weight: $fw-book;
+    }
+
+    &__list {
+        position: absolute;
+        top: -7px;
+        left: 7px;
+        z-index: 5;
+
+        display: none;
+        flex-direction: column;
+        width: 142px;
+        height: 216px;
+
+        border: 1px solid #c2d2f4;
+        border-radius: 8px;
+        overflow-y: auto;
+
+        background-color: #fff;
+
+        &_active {
+            display: flex;
+        }
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #c2d2f4;
+        }
+    }
+
+    &__option {
+        padding: 8px 0px 8px 14px;
+
+        cursor: pointer;
+
+        &:first-child {
+            padding-top: 14px;
+        }
+
+        &_selected {
+            background-color: #c2d2f4;
+            color: $blue;
+        }
+    }
+
+    &::before {
+        content: '';
+        width: 12px;
+        height: 16px;
+        background-image: url('../../assests/img/header/Pin.svg');
+        position: absolute;
+        top: 25%;
+        left: -7px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .select {
+        &__display {
+            padding: 0;
+            margin-left: 28px;
+            border-bottom: 1px dashed #c1cfef;
+        }
+
+        &::before {
+            left: 0px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../styles/var';
+
+.partners {
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 76px;
+
+        padding: 77px 103px 32px;
+
+        .splide {
+            width: 100%;
+
+            li {
+                text-align: center;
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 82px;
+        right: 101px;
+
+        padding: 8px 16px 8px 42px;
+        border: 1px solid #DDE7FD;
+        border-radius: 24px;
+
+        color: $mainColor;
+        font-weight: $fw-book;
+        font-size: $fs-s1;
+        line-height: $fs-m1;
+        text-align: center;
+
+        &::before {
+            content: '';
+            width: 22px;
+            height: 22px;
+            background-image: url('../../assests/img/Case.svg');
+            background-size: contain;
+            position: absolute;
+            left: 13px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .partners__container {
+        padding: 34px 16px 46px;
+        gap: 31px;
+
+        .section__title {
+            text-align: center;
+            width: 75%;
+        }
+    }
+
+    .partners__button {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+
+        &::before {
+            left: 26%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../styles/var';
+
+.more {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        padding: 81px 103px 88px;
+
+        color: $textColor;
+        font-size: $fs-s1;
+        line-height: $fs-m1;
+        font-weight: $fw-book;
+    }
+
+    &__spoiler {
+        margin-left: 10px;
+        cursor: pointer;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .more__container {
+        padding: 49px 16px 57px;
+    }
+
+    .more__block {
+        gap: 16px;
+    }
+}

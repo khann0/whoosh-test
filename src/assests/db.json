@@ -1,0 +1,44 @@
+{
+    "cities": [
+        {
+            "name": "Chicago",
+            "id": 0
+        },
+        {
+            "name": "Philadelphia",
+            "id": 1
+        },
+        {
+            "name": "Dallas",
+            "id": 2
+        },
+        {
+            "name": "Jacksonville",
+            "id": 3
+        },
+        {
+            "name": "San Francisco",
+            "id": 4
+        },
+        {
+            "name": "Chicago",
+            "id": 5
+        },
+        {
+            "name": "Philadelphia",
+            "id": 6
+        },
+        {
+            "name": "Dallas",
+            "id": 7
+        },
+        {
+            "name": "Jacksonville",
+            "id": 8
+        },
+        {
+            "name": "San Francisco",
+            "id": 9
+        }
+    ]
+}

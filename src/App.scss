@@ -1,0 +1,99 @@
+@import './styles/var';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+}
+
+.section__title {
+    color: #000;
+
+    font-size: $fs-l1;
+    line-height: 3rem;
+    font-weight: $fw-bold;
+}
+
+[class*="__container"] {
+    max-width: 1366px;
+    margin: 0px auto;
+}
+
+
+@media (max-width: 1087px) {
+    [class*="__container"] {
+        max-width: 1023px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 917px;
+    }
+
+    .section__title {
+        font-size: $fs-l2;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section__title {
+        font-size: $fs-m1;
+        line-height: $fs-l2;
+    }
+}
+
+button,
+input,
+a {
+    font-family: 'Intro', sans-serif;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.card__title {
+    font-size: $fs-m2;
+    line-height: $fs-l2;
+    font-weight: $fw-regular;
+}
+
+@media (max-width: 767.98px) {
+    .card__title {
+        font-size: $fs-m4;
+    }
+}
+
+.card__text {
+    font-size: $fs-s1;
+    line-height: $fs-m1;
+    font-weight: 300;
+    color: #666;
+}
+
+.button {
+    background-color: $blue;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    color: #fff;
+    font-family: 'Intro', sans-serif;
+    font-size: $fs-m3;
+    line-height: $fs-l2;
+    border-radius: 32px;
+    text-align: center;
+
+    &:hover {
+        background-color: #1252db;
+    }
+}
