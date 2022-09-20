@@ -2,6 +2,7 @@
   "name": "whoosh",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
     "@splidejs/react-splide": "^0.7.10",
