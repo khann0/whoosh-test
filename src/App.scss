@@ -22,16 +22,16 @@
 }
 
 
-@media (max-width: 1087px) {
-    [class*="__container"] {
-        max-width: 1023px;
-    }
-}
+// @media (max-width: 1087px) {
+//     [class*="__container"] {
+//         max-width: 1023px;
+//     }
+// }
 
 @media (max-width: 991.98px) {
-    [class*="__container"] {
-        max-width: 917px;
-    }
+    // [class*="__container"] {
+    //     max-width: 917px;
+    // }
 
     .section__title {
         font-size: $fs-l2;

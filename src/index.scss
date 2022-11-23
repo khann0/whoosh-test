@@ -2,10 +2,14 @@
 @import './styles/fonts';
 @import './styles/var';
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Intro', sans-serif;
   background-color: #fff;
   color: $mainColor;
-  overflow-x: hidden;
 }

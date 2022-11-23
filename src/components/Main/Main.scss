@@ -36,7 +36,7 @@
         background-color: $yellow;
 
         input {
-            padding: 8px 16px;
+            padding: 8px 30px 8px 16px;
 
             outline: none;
             border-radius: 4px;
@@ -140,6 +140,18 @@
     }
 }
 
+@media (max-width: 1002px) {
+    .main__container {
+        padding: 36px 26px 32px 26px;
+    }
+
+    .video {
+        width: 328px;
+        height: 200px;
+        margin-top: 5px;
+    }
+}
+
 @media (max-width: 767.98px) {
     .main {
         background-image: none;
@@ -189,11 +201,5 @@
         order: 1;
         align-items: center;
         gap: 32px;
-    }
-
-    .video {
-        width: 328px;
-        height: 200px;
-        margin-top: 5px;
     }
 }

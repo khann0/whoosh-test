@@ -26,7 +26,7 @@ function Partners() {
                             setPerPage(1);
                             setMove(1);
                         } else {
-                            setPerPage(5);
+                            setPerPage(4);
                             setMove(3);
                         }
                     }}
